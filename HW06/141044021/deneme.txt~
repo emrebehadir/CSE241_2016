@@ -1,0 +1,12 @@
+mov #0,30  ;R4 counter R5 size olarak kullanılmışıtır.Sırayla 01,12,23,34,45
+mov #1,23  ;56,67,78,89 seklinde sayılar kontrol edilmiş sıralama yanlış ise
+mov #2,4   ;deistirilmiştir.Tüm kontorollerde (01,12,...) sıralama dogru ise
+mov #3,56  ;counter 1 arttırılmış ve sort tamamlanmıstır.
+mov #4,34
+mov #5,56
+mov #6,89
+mov #7,32
+mov #8,45
+mov #9,25
+mov #10,25
+hlt

@@ -1,0 +1,31 @@
+all:  _mainTester
+
+_mainTester: _mainTester.o CPUProgram.o CPU.o instruction.o Computer.o Memory.o CPUProgramDyn.o
+	g++ _mainTester.o CPUProgram.o CPU.o instruction.o Computer.o Memory.o CPUProgramDyn.o -o exe
+
+_mainTester.o: _mainTester.cpp
+	g++ -std=c++11 -c _mainTester.cpp
+
+CPUProgram.o: CPUProgram.cpp
+	g++ -std=c++11 -c CPUProgram.cpp
+
+CPU.o: CPU.cpp
+	g++ -std=c++11 -c CPU.cpp
+
+CPUProgramDyn.o: CPUProgramDyn.cpp
+	g++ -std=c++11 -c CPUProgramDyn.cpp
+
+instruction.o: instruction.cpp
+	g++ -std=c++11 -c instruction.cpp
+
+Computer.o: Computer.cpp
+	g++ -std=c++11 -c Computer.cpp
+
+Memory.o: Memory.cpp
+	g++ -std=c++11 -c Memory.cpp
+
+run0:
+	./exe deneme.txt 0
+
+clean:
+	rm *.o exe

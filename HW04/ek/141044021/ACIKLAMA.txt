@@ -1,0 +1,2 @@
+Hocam odev tesliminde requiredIncs.h mevcut ayrıca odev teslimindeki  mainide
+gondermis oldugunuz test main var.Ek main oldugundan sade make file yeniden yazdım.

@@ -1,0 +1,14 @@
+package deneme;
+
+public class isDouble {
+	boolean doubleCheck(int x) {
+        return false;
+    }
+
+    boolean doubleCheck(double x) {
+        return true;
+    }
+    boolean doubleCheck(String x) {
+        return false;
+    }
+}

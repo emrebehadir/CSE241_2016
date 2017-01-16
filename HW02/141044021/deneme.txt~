@@ -1,0 +1,5 @@
+mov r1,20
+mov r1,#0
+mov #1,50
+mov #1,r2
+hlt

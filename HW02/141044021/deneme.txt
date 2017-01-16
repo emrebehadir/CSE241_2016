@@ -1,0 +1,9 @@
+mov r1,20
+mov r1,#0
+mov #1,50
+mov #1,r2
+add r3,#1
+sub r4,#1
+jpn r4,9
+add r1,10000
+hlt

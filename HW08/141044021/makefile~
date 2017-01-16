@@ -1,0 +1,22 @@
+all:  _mainTester
+
+_mainTester: 
+	javac  *.java
+
+run0:
+	java _mainTester t1.txt 1 1 && java _mainTester t2.txt 2 1 && java _mainTester t3.txt 3 1
+
+run1:
+	java _mainTester t1.txt 1 2 && java _mainTester t2.txt 2 2 && java _mainTester t3.txt 3 2
+
+run2:
+	java _mainTester t4.txt 1 2 
+
+run3:
+	java _mainTester t5.txt 2 2 
+
+run4:
+	java _mainTester t4.txt 3 2 
+
+clean:
+	rm -f *.class

@@ -1,0 +1,15 @@
+MOV R1, 0;lkkkkkkkkkkk
+MOV R2, 1
+MOV R2, R3
+MOV R4, 10
+ADD R1, R3
+SUB R2, 1
+JMP R2, 9
+JMP 5
+SUB R4, 1
+ADD r3, 1
+MOV R3, R2
+JMP R4, 14
+jMP 5
+pRN R1
+HLT

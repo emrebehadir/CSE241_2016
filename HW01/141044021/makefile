@@ -1,0 +1,19 @@
+all: hello
+
+hello: main.o 
+	g++ main.o -o hello
+
+main.o: main.cpp
+	g++ -c main.cpp
+	
+run1:
+	./hello 1to10sqare.txt 1
+run2:
+	./hello 1to10sqare.txt 0
+run3:
+	./hello deneme.txt 0
+run4:
+	./hello deneme.txt 1
+	
+clean:
+	rm *.o hello

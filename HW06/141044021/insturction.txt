@@ -1,0 +1,20 @@
+add r1,10 ;n*(n+1)*(2n+1)/6 1'den n kadar olan sayıların kareler toplamı olan formülü
+add r2,11 ;kullandım.İlk önce n*(n+1) çarpma işlemini yaptım 1-6 satır arası 
+add r3,r1 ;daha sonra sayı*(2n+1) işlemini yaptım. (7-13 satırlar arası)
+sub r2,1  ;en son olarak çarpma isleminden gelen sayıyı 6 bölerek( 14-19 satır 
+JMP r2,7  ; arası )yani sürekli 6 cıkararak R1 arttırdım ve sonuca ulaştım.
+JMP 3
+add r2,r1
+add r2,r1 ; 2n+1 oldu cunku bir sonraki adımda move yaparak
+mov r3,r1 ; ilk sayı eklemis oldum.
+add r3,r1
+sub r2,1
+JMP r2,14
+JMP 10
+mov r1,0
+mov r2,6
+sub r3,r2
+add r1,1
+JMP r3,20
+JMP 16
+hlt

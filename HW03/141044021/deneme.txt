@@ -1,0 +1,12 @@
+mov r1,10
+add r1,10
+add r1,r5
+add r1,10
+sub r1,10
+sub r5,r1
+jmp r2,8
+add r1,10
+sub r1,10
+prn r1
+prn -25
+hlt

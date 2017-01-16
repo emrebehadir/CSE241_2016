@@ -1,0 +1,41 @@
+all: hello
+
+hello: main.o CPUProgram.o CPU.o instruction.o Computer.o Memory.o
+	g++ main.o CPUProgram.o CPU.o instruction.o Computer.o Memory.o -o hello
+
+main.o: main.cpp
+	g++ -std=c++11 -c main.cpp
+
+CPUProgram.o: CPUProgram.cpp
+	g++ -std=c++11 -c CPUProgram.cpp
+
+CPU.o: CPU.cpp
+	g++ -c CPU.cpp
+
+instruction.o: instruction.cpp
+	g++ -std=c++11 -c instruction.cpp
+
+Computer.o: Computer.cpp
+	g++ -std=c++11 -c Computer.cpp
+
+Memory.o: Memory.cpp
+	g++ -std=c++11 -c Memory.cpp
+
+run0:
+	./hello sort.txt 0
+
+run1:
+	./hello sort.txt 1
+
+run2:
+	./hello 1to10sqare.txt 0
+
+run3:
+	./hello 1to10sqare.txt 1
+
+run4:
+	./hello 1to10sqare.txt 2
+
+
+clean:
+	rm *.o hello
